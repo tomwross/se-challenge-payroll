@@ -16,7 +16,6 @@ from payroll_loader.models import (
 )
 from payroll_loader.utilities import (
     get_period_start_and_end,
-    populate_job_groups,
 )
 
 class IndexView(TemplateView):
@@ -46,8 +45,6 @@ class CSVUploaderView(TemplateView):
         file_data = csv_file.read().decode("utf-8")
         lines = file_data.split("\n")[1:]
         lines = [l for l in lines if l]
-
-        populate_job_groups()
 
         _, rid, _, _ = tuple(lines.pop().split(','))
 
