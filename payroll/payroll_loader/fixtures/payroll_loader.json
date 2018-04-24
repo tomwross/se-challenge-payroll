@@ -1,0 +1,18 @@
+[
+{
+    "model": "payroll_loader.jobgroup",
+    "pk": 1,
+    "fields": {
+        "type": "A",
+        "pay_rate": "20.00"
+    }
+},
+{
+    "model": "payroll_loader.jobgroup",
+    "pk": 2,
+    "fields": {
+        "type": "B",
+        "pay_rate": "30.00"
+    }
+}
+]
