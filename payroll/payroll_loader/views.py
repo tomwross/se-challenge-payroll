@@ -16,6 +16,7 @@ from payroll_loader.models import (
 )
 from payroll_loader.utilities import (
     get_period_start_and_end,
+    populate_job_groups,
 )
 
 class IndexView(TemplateView):
