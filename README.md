@@ -24,7 +24,9 @@
 
 # Notes
 
-This was a great challenge.
+This was a great challenge. I made the model easily scalable so the scope of the payroll application can be extended to include features such as an employee profile management feature. The pay cheque (pay amounts by pay period per employee) was added to the models so period pay amount only needed to be calculated once as the data was loaded into the application. Employees and job groups were stored separately as one employee can belong to multiple job groups (e.g. an employee is promoted) and many employees can be members of a single job group.
+
+The templates are the weakest portion of the application, and the area I have the least experience in. However, front-end design is something I would like to become proficient in aim of becoming a full stack developer.
 
 # Wave Software Development Challenge
 
