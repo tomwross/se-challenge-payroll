@@ -52,6 +52,8 @@ class Employee(models.Model):
 class EmployeeJobGroup(models.Model):
     '''
     Employees are members of job groups
+    An employee can be a member of multiple job groups
+    Multiple employees can belong to a single job group
     '''
 
     # Employee of this job group
@@ -68,6 +70,8 @@ class EmployeeJobGroup(models.Model):
 class PayCheque(models.Model):
     """
     Pay cheque calculated for pay period from uploaded payroll file
+    Pay cheque data archived so report calculations only need to happen
+    at the time of upload
     """
 
     pay_amount = models.DecimalField(max_digits=10, decimal_places=2)
@@ -90,7 +94,7 @@ class WorkDay(models.Model):
     """
     Hours worked on date for employee and job group relation
     """
-    
+
     employee_job_group = models.ForeignKey(EmployeeJobGroup, on_delete=models.CASCADE)
     date = models.DateField()
     hours = models.DecimalField(max_digits=5, decimal_places=2)
