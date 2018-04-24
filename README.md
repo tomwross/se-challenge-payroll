@@ -1,28 +1,30 @@
 # Install and Setup
 
 1. Fork and clone this repo
-2. Optionally setup a virtual environment (use Python3)
-3. Install requirements
+1. Optionally setup a virtual environment (use Python3)
+1. Install requirements
   - `pip install -r requirements.txt`
-4. Run django migrations
+1. Run django migrations
    - `python payroll/manage.py migrate`
-5. Create a superuser
+1. Create a superuser
    - `cd payroll`
    - `python payroll/manage.py createsuperuser`
-6. Start Django server
+1. Load initial data
+   - `manage.py loaddata payroll_loader`
+1. Start Django server
    - `python payroll/manage.py runserver`
 
 # Uploading payroll file to CSV
 
 1. Browse to `http://127.0.0.1:8000/payroll_loader/`
-2. Click `Upload Payroll CSV`
-3. Click `Browse` and select payroll file to upload
-4. Click `Upload`
-5. If upload completes, you will automatically be taken to the payroll report
+1. Click `Upload Payroll CSV`
+1. Click `Browse` and select payroll file to upload
+1. Click `Upload`
+1. If upload completes, you will automatically be taken to the payroll report
 
 # Notes
 
-This was a great challenge. 
+This was a great challenge.
 
 # Wave Software Development Challenge
 
