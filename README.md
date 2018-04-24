@@ -20,6 +20,9 @@
 4. Click `Upload`
 5. If upload completes, you will automatically be taken to the payroll report
 
+# Notes
+
+This was a great challenge. 
 
 # Wave Software Development Challenge
 
