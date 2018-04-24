@@ -4,11 +4,13 @@
 2. Optionally setup a virtual environment (use Python3)
 3. Install requirements
   - `pip install -r requirements.txt`
-4. Create a superuser
+4. Run django migrations
+   - `python payroll/manage.py migrate`
+5. Create a superuser
    - `cd payroll`
-   - `python manage.py createsuperuser`
-5. Start Django server
-   - `python manage.py runserver`
+   - `python payroll/manage.py createsuperuser`
+6. Start Django server
+   - `python payroll/manage.py runserver`
 
 # Uploading payroll file to CSV
 
