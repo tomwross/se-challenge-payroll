@@ -24,9 +24,13 @@
 
 # Notes
 
-This was a great challenge. I made the model easily scalable so the scope of the payroll application can be extended to include features such as an employee profile management feature. The pay cheque (pay amounts by pay period per employee) was added to the models so period pay amount only needed to be calculated once as the data was loaded into the application. Employees and job groups were stored separately as one employee can belong to multiple job groups (e.g. an employee is promoted) and many employees can be members of a single job group.
+This was a great challenge. I decided to use Django as it seems like the more ubiquitous and robust framework for Python. I considered Flask but felt that Django would make the application stronger and more scalable.
+
+I made the model easily scalable so the scope of the payroll application can be extended to include features such as an employee profile management feature. The pay cheque (pay amounts by pay period per employee) was added to the models so period pay amount only needed to be calculated once as the data was loaded into the application. Employees and job groups were stored separately as one employee can belong to multiple job groups (e.g. an employee is promoted) and many employees can be members of a single job group.
 
 The templates are the weakest portion of the application, and the area I have the least experience in. However, front-end design is something I would like to become proficient in aim of becoming a full stack developer.
+
+The payroll report is ordered by pay period is that the most recent pay cheques appear at the top, which is likely how most users would like the data ordered. I would probably replace this simple template with something a bit more robust so that users could sort directly on the page.
 
 # Wave Software Development Challenge
 
